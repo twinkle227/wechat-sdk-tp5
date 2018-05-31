@@ -29,7 +29,7 @@ class Jsapi
 		$input->SetTime_start(date("YmdHis"));					//订单生成时间
 		$input->SetTime_expire(date("YmdHis", time() + 600));	//订单失效时间
 		//$input->SetGoods_tag("test");			商品优惠券
-		$input->SetNotify_url("https://ln.hongmaiwang.com/index/api/appNotify");
+		$input->SetNotify_url("https://www.test.com/index/api/appNotify");
 		$input->SetTrade_type("JSAPI");
 		$input->SetOpenid($openId);
 		$order = \WxPayApi::unifiedOrder($input);
